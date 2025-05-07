@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: dbt_ecommerce
+    schema: raw_data
+    tables:
+      - name: products
+        description: "Raw product data from the source system"
+      
+
+      - name: users
+        description: "Raw user data from the source system"
+        
+
+      - name: orders
+        description: "Raw order data from the source system"
+        
+
+      - name: order_items
+        description: "Raw order items data from the source system"
+
+
+      - name: inventory_items
+        description: "Raw inventory items data from the source system"
+
+
+      - name: events
+        description: "Raw event data from the source system"

@@ -1,0 +1,5 @@
+version: 2
+
+seeds:
+  - name: ecommerce__distribution_centers
+    description: "Raw distribution center data from the source system"

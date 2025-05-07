@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: stg_ecommerce__distribution_centers
+    description: "Cleaned distribution center data with standardized column names"
+    columns:
+      - name: id
+        description: "Primary key for distribution centers"
+        tests:
+          - unique
+          - not_null
+      - name: latitude
+        description: "Geographic coordinate"
+        tests:
+          - not_null
+
+  - name: stg_ecommerce__products
+    description: "Cleaned product data with standardized column names"
+    columns:
+      - name: id
+        description: "Primary key for products"
+        tests:
+          - unique
+          - not_null
+      - name: retail_price
+        description: "Rtail Price of the product"
+        tests:
+          - not_null
+        
+  - name: stg_ecommerce__users
+    description: "Cleaned user data with standardized column names"
+    columns:
+      - name: id
+        description: "Primary key for users"
+        tests:
+          - unique
+          - not_null
+      - name: email
+        description: "Email address of the user"
+        tests:
+          - not_null
+
+  - name: stg_ecommerce__orders
+    description: "Cleaned order data with standardized column names"
+    columns:
+      - name: order_id
+        description: "Primary key for orders"
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: "Foreign key to users table"
+        tests:
+          - not_null
+
+  - name: stg_ecommerce__order_items
+    description: "Cleaned order items data with standardized column names"
+    columns:
+      - name: id
+        description: "Primary key for order items"
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: "Foreign key to orders table"
+        tests:
+          - not_null
+
+
+  - name: stg_ecommerce__inventory_items
+    description: "Cleaned inventory items data with standardized column names"
+    columns:
+      - name: id
+        description: "Primary key for inventory items"
+        tests:
+          - unique
+          - not_null
+      - name: product_id
+        description: "Foreign key to products table"
+        tests:
+          - not_null
+
+  - name: stg_ecommerce__events
+    description: "Cleaned event data with standardized column names"
+    columns:
+      - name: id
+        description: "Primary key for events"
+        tests:
+          - unique
+          - not_null
+      
+
+        
