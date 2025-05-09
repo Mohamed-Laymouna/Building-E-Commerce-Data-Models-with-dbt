@@ -17,8 +17,15 @@ This project demonstrates an end-to-end modern data transformation pipeline usin
 * Lay the foundation for building dashboards and advanced analytics in future iterations.
 
 ## 🧾 Dataset Overview
+### Data Source
 
-The dataset used is a simplified representation of an e-commerce platform. It includes key tables:
+This dbt project leverages data from the Looker E-commerce BigQuery Dataset, available on Kaggle:
+
+[Looker E-commerce BigQuery Dataset](https://www.kaggle.com/datasets/mustafakeser4/looker-ecommerce-bigquery-dataset)
+
+This dataset provides a rich set of e-commerce data, including information on users, products, orders, events, and inventory.
+
+
 
 ### Staging Tables (`/models/staging/`)
 
