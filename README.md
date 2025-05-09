@@ -142,4 +142,4 @@ In future iterations, this project will be migrated to a **cloud-based data ware
 
 ## 🤝 Connect With Me
 
-📫 [GitHub](https://github.com/mohamed-laymouna) | [LinkedIn](https://linkedin.com/in/yourprofile) | [Email](mohamed.laymouna@email.com)
+📫 [GitHub](https://github.com/mohamed-laymouna) | [LinkedIn](https://www.linkedin.com/in/mohamed-laymouna-30240496/) | [Email](mohamed.laymouna@email.com)
