@@ -2,4 +2,18 @@ version: 2
 
 seeds:
   - name: ecommerce__distribution_centers
-    description: "Raw distribution center data from the source system"
+    description: Distribution center name and location
+    columns:
+      - name: id 
+        description: Unique ID for the distribution center
+        data_tests:
+          - unique 
+          - not_null       
+      - name: name 
+        description: Distribution center name
+        data_tests:
+          - not_null 
+      - name: latitude
+        description: Distribution center location latitude
+      - name: longtitude
+        description: Distribution center location longitude

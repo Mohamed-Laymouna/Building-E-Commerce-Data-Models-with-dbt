@@ -1,0 +1,16 @@
+version: 2
+
+snapshots:
+  - name: orders_snapshot
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+          
+  - name: inventory_snapshot  
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null

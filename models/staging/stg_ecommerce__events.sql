@@ -3,6 +3,7 @@
 SELECT 
     id,
     sequence_number,
+    user_id,
     session_id,
     created_at,
     ip_address,
